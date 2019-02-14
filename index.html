@@ -3,18 +3,7 @@
 <?php
 	session_start();
 
-	$username = "username";
-	$password = "password";
-
-	if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
-		header("Location: succes.php")
-	}
-
-	if (isset($_POST['username']) && (isset($_POST['password']))
-		if ($_POST['username'] == $username && $_POST['password'] == $password){
-			$_SESSION['logged_in'] == true;
-			header('Location: succes.php')
-		}
+	echo $_SERVER["REMOTE_ADDR"];
 
  ?>
 
