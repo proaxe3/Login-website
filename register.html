@@ -27,6 +27,9 @@
 			a{
 				text-decoration: none;
 			}
+			a:nth-child(2){
+				margin-left: 10px;
+			}
 			a:hover{
 				color: red;
 			}
@@ -34,6 +37,10 @@
 				width: 350px;
 				margin: 300px auto;
 				background-color: GhostWhite;
+			}
+			div{
+				padding: 0px 10px 10px 10px;
+				display: flex;
 			}
 		</style>
 		<form method="GET" action="registered.html">
@@ -43,6 +50,7 @@
 			<input type="password" required placeholder="Confirm Password"></input><br>
 			<input type="checkbox" required>I Agree to the <a href="terms.html" target="_blank">Terms & Conditions</a></input><br>
 			<button type="submit">Register</button>
+			<div><p>Already have an account?</p> <a href="register.html">Login here</a></div>
 		</form>
 	</body>
 </html>
